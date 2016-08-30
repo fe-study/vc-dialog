@@ -6,8 +6,8 @@ module.exports = {
   output: {
     path: './dist',
     publicPath: '/',
-    filename: 'build.js',
-    library: 'VueComponentsName',
+    filename: 'vc-dialog.js',
+    library: 'vc-dialog',
     libraryTarget: 'umd'
   },
   resolve: {

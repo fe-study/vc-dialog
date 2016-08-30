@@ -7,7 +7,13 @@
 </head>
 <body>
 	<div id='app'>
-		<v-hello></v-hello>
+        <h1>vc-dialog</h1>
+		<vc-dialog v-ref:dialog
+            :visible='isShow'>
+            <div class="vc-dialog-body">
+                yangxiaofu
+            </div>      
+        </vc-dialog>
 	</div>
 	<script src='./static/build/build.js'></script>
 </body>

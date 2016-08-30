@@ -1,5 +1,5 @@
-import vHello from './components/helloworld/helloworld.vue'
+import vcDialog from './components/dialog/dialog.vue'
 
 export {
-	vHello
+	vcDialog
 }
