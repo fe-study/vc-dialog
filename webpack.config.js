@@ -7,7 +7,7 @@ module.exports = {
     path: './dist',
     publicPath: '/',
     filename: 'vc-dialog.js',
-    library: 'vc-dialog',
+    library: 'vcDialog',
     libraryTarget: 'umd'
   },
   resolve: {

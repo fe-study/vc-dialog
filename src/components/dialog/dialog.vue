@@ -10,7 +10,7 @@
                     </div>
                     <div class="modal-dialog-footer">
                         <button class="btn btn-primary"
-                            @click='onSuccessed'>{{sureText}}</button>
+                            @click='onSuccessed'>{{okText}}</button>
                         <button class="btn btn-default"
                             @click='onCanceled'>{{cancelText}}</button>
                     </div>
@@ -26,7 +26,7 @@ export default {
         }
     },
     props: {
-        sureText: {
+        okText: {
             type: String,
             default () {
                 return '确定'
@@ -44,7 +44,7 @@ export default {
                 return false;
             }
         },
-        onSuccess: {
+        onOk: {
             type: Function
         },
         onCancel: {
@@ -60,7 +60,7 @@ export default {
             }
         },
         onSuccessed () {
-            this.onSuccess&&this.onSuccess();
+            this.onOk&&this.onOk();
             this.onSwitch();
         },
         onCanceled () {

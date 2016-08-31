@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import {
-		vcDialog
-	} from '../dist/vc-dialog.js'
+import vcDialog from '../dist/vc-dialog.js'
+
+console.log(vcDialog)
 
 new Vue({
 	el: '#app',
@@ -14,6 +14,5 @@ new Vue({
 		vcDialog
 	},
 	ready () {
-		//this.$refs.dialog.onSwitch();
 	}
 })

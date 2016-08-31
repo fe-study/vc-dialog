@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["vc-dialog"] = factory();
+		exports["vcDialog"] = factory();
 	else
-		root["vc-dialog"] = factory();
+		root["vcDialog"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -56,18 +56,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	exports.vcDialog = undefined;
-	
 	var _dialog = __webpack_require__(2);
 	
 	var _dialog2 = _interopRequireDefault(_dialog);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.vcDialog = _dialog2.default;
+	module.exports = _dialog2.default;
 
 /***/ },
 /* 1 */,
@@ -464,7 +459,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//                     </div>
 	//                     <div class="modal-dialog-footer">
 	//                         <button class="btn btn-primary"
-	//                             @click='onSuccessed'>{{sureText}}</button>
+	//                             @click='onSuccessed'>{{okText}}</button>
 	//                         <button class="btn btn-default"
 	//                             @click='onCanceled'>{{cancelText}}</button>
 	//                     </div>
@@ -480,7 +475,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	
 	    props: {
-	        sureText: {
+	        okText: {
 	            type: String,
 	            default: function _default() {
 	                return '确定';
@@ -498,7 +493,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                return false;
 	            }
 	        },
-	        onSuccess: {
+	        onOk: {
 	            type: Function
 	        },
 	        onCancel: {
@@ -514,7 +509,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	        },
 	        onSuccessed: function onSuccessed() {
-	            this.onSuccess && this.onSuccess();
+	            this.onOk && this.onOk();
 	            this.onSwitch();
 	        },
 	        onCanceled: function onCanceled() {
@@ -554,7 +549,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 8 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"modal\" v-show=\"visible\" _v-33688173=\"\">\n        <div class=\"modal-dialog\" _v-33688173=\"\">\n            <div class=\"modal-content\" _v-33688173=\"\">\n                <div class=\"modal-body\" _v-33688173=\"\">\n                    <div class=\"modal-dialog-body\" _v-33688173=\"\">\n                        <slot _v-33688173=\"\">\n                        \n                        </slot>\n                    </div>\n                    <div class=\"modal-dialog-footer\" _v-33688173=\"\">\n                        <button class=\"btn btn-primary\" @click=\"onSuccessed\" _v-33688173=\"\">{{sureText}}</button>\n                        <button class=\"btn btn-default\" @click=\"onCanceled\" _v-33688173=\"\">{{cancelText}}</button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>";
+	module.exports = "<div class=\"modal\" v-show=\"visible\" _v-33688173=\"\">\n        <div class=\"modal-dialog\" _v-33688173=\"\">\n            <div class=\"modal-content\" _v-33688173=\"\">\n                <div class=\"modal-body\" _v-33688173=\"\">\n                    <div class=\"modal-dialog-body\" _v-33688173=\"\">\n                        <slot _v-33688173=\"\">\n                        \n                        </slot>\n                    </div>\n                    <div class=\"modal-dialog-footer\" _v-33688173=\"\">\n                        <button class=\"btn btn-primary\" @click=\"onSuccessed\" _v-33688173=\"\">{{okText}}</button>\n                        <button class=\"btn btn-default\" @click=\"onCanceled\" _v-33688173=\"\">{{cancelText}}</button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>";
 
 /***/ }
 /******/ ])
