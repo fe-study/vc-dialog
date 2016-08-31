@@ -1,7 +1,15 @@
 ## vue component skeleton
 
+## install
+
+```js
+npm install vc-dialog --save
+```
+
 ## usage
 
+
+## dev
 * Build
 
 ```node
