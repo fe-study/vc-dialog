@@ -1,7 +1,7 @@
 {
   "name": "vc-dialog",
   "version": "0.0.1",
-  "description": "vue component skeleton",
+  "description": "vue dialog component",
   "dependencies": {
     "vue": "^1.0.8"
   },
@@ -30,7 +30,20 @@
     "build": " webpack -w --progress --hide-modules ",
     "publish": "webpack --progress --hide-modules --config  webpack.production.js"
   },
-  "main": "dist/build.js",
-  "keywords": [],
+  "main": "dist/vc-dialog.js",
+  "keywords": [
+    "vue",
+    "vue-component",
+    "vc-bootstrap",
+    "vc-dialog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iwaimai-bi-fe/vc-dialog"
+  },
+  "bugs": {
+    "url": "https://github.com/iwaimai-bi-fe/vc-dialog/issues"
+  },
+  "homepage": "https://iwaimai-bi-fe.github.io/vc-bootstrap-doc/",
   "license": "MIT"
 }
